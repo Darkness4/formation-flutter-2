@@ -1,6 +1,10 @@
-
+# Ignore
+set -e
+set -x
 echo "NE PAS EXECUTER, FAIRE UNIQUEMENT PAR SELECTION"
 exit 1
+# ------
+
 # Seulement pour Ubuntu/Debian-based
 
 # Install Android SDK et FlutterSDK (avec PATH vers DartSDK)
