@@ -39,7 +39,6 @@ const pointAndLine = {
   'line': [ImmutablePoint(1, 10), ImmutablePoint(-2, 11)],
 };
 
-// Named constructor
 class SuperPoint {
   // Privates
   final int _x;

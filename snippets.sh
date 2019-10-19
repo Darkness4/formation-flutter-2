@@ -47,10 +47,10 @@ PATH=$INSTALL_DIR/android-sdk/tools/bin:$PATH
 
 mkdir ~/.android
 echo 'count=0' > ~/.android/repositories.cfg
-yes | sdkmanager --licenses
+yes | sdkmanager --licenses  # Dites oui
 sdkmanager "tools" \
-    "platforms;android-28" \
-    "build-tools;29.0.1" \
+    "platforms;android-29" \
+    "build-tools;29.0.2" \
     "platform-tools" \
 yes | sdkmanager --licenses || echo "Failed"
 flutter doctor -v
@@ -76,7 +76,7 @@ fi
 # Emulateur
 sdkmanager "emulator"
 echo "export PATH=\$ANDROID_HOME/emulator:\$PATH" >> ~/.profile
-sdkmanager "system-images;android-28;default;x86"
+sdkmanager "system-images;android-29;default;x86"
 yes | sdkmanager --licenses
 avdmanager  --verbose create avd --force --name "Nexus_5X_API_28" --device "Nexus 5X"  --package "system-images;android-28;default;x86" --abi "x86"
 
